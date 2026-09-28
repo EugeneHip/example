@@ -1,0 +1,5 @@
+# Uploaded student photos: allow the files to be served as static images
+# only. Prevent any uploaded file from ever being executed as a script.
+<FilesMatch "\.(php|php\d|phtml|pht|phar)$">
+    Require all denied
+</FilesMatch>

@@ -1,0 +1,70 @@
+/* Status / role / gender badge colors used by the Enrollment, Enrollment
+   Details, Grades, Payment and History Enrollment modules (hipanao_badge()
+   in include/ui_helpers.php). Kept in its own file so none of the existing
+   SANTE theme/CSS is modified - this only adds color to badge classes
+   that did not exist anywhere else before. */
+
+.badge-status-active,.badge-status-enrolled{ background-color:#28a745; color:#fff; }
+.badge-status-inactive{ background-color:#6c757d; color:#fff; }
+.badge-status-pending,.badge-status-reserved{ background-color:#ffc107; color:#212529; }
+.badge-status-suspended,.badge-status-dropped{ background-color:#dc3545; color:#fff; }
+.badge-status-completed{ background-color:#17a2b8; color:#fff; }
+.badge-status-graduated{ background-color:#6610f2; color:#fff; }
+.badge-status-assign{ background-color:#007bff; color:#fff; }
+.badge-status-forpayment{ background-color:#17a2b8; color:#fff; }
+.badge-subject-major{ background-color:#6f42c1; color:#fff; }
+.badge-subject-minor{ background-color:#20c997; color:#fff; }
+.badge-role-administrator{ background-color:#dc3545; color:#fff; }
+.badge-role-editor{ background-color:#007bff; color:#fff; }
+.badge-role-author{ background-color:#17a2b8; color:#fff; }
+.badge-role-subscriber{ background-color:#6c757d; color:#fff; }
+.badge-gender-male{ background-color:#007bff; color:#fff; }
+.badge-gender-female{ background-color:#e83e8c; color:#fff; }
+
+/* Small layout helpers needed by the ported Student module (photo
+   upload preview circle, table avatar, toolbar row) - purely
+   structural, no colors/branding, kept separate from sante's theme. */
+.hipanao-photo-upload{ text-align:center; }
+.hipanao-photo-upload img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #dee2e6;
+  margin-bottom: .6rem;
+}
+.hipanao-toolbar{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:.6rem;
+}
+.hipanao-toolbar .hipanao-toolbar-actions{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  flex-wrap:wrap;
+}
+.hipanao-avatar{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #dee2e6;
+  margin-right: .6rem;
+  vertical-align: middle;
+}
+.hipanao-cell-user{ display:flex; align-items:center; }
+.action-btn{
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+  margin: 0 2px;
+  font-size: .8rem;
+  line-height: 1;
+}
